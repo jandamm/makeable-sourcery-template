@@ -1,0 +1,5 @@
+sources: 
+  - Example/Input
+templates: 
+  - Templates
+output: Example

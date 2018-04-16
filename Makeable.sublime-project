@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"name": "Project",
+			"folder_exclude_patterns": ["*"]
+		},
+		{
+			"path": "Templates"
+		},
+		{
+			"path": "Example/Input",
+			"name": "Example Input"
+		},
+		{
+			"path": "Example",
+			"name": "Example Output",
+			"folder_exclude_patterns": ["*"]
+		}
+	]
+}
