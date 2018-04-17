@@ -117,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD62019B2085E922001DFE7B /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
+				FD6201C42085F1EC001DFE7B /* Sourcery */,
 				FD62018F2085E922001DFE7B /* Sources */,
 				FD6201902085E922001DFE7B /* Frameworks */,
 				FD6201912085E922001DFE7B /* Resources */,
@@ -134,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD6201B72085E9E0001DFE7B /* Build configuration list for PBXNativeTarget "UnitTestsMin" */;
 			buildPhases = (
+				FD6201C62085F348001DFE7B /* Sourcery */,
 				FD6201AE2085E9E0001DFE7B /* Sources */,
 				FD6201AF2085E9E0001DFE7B /* Frameworks */,
 				FD6201B02085E9E0001DFE7B /* Resources */,
@@ -198,6 +200,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD6201C42085F1EC001DFE7B /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sourcery --config \"${SRCROOT}/..\"";
+			showEnvVarsInLog = 0;
+		};
+		FD6201C62085F348001DFE7B /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sourcery --config \"${SRCROOT}/..\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD62018F2085E922001DFE7B /* Sources */ = {
