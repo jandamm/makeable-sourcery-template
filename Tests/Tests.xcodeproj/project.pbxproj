@@ -8,31 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		FD6201972085E922001DFE7B /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201962085E922001DFE7B /* UnitTests.swift */; };
-		FD6201A12085E967001DFE7B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD62019F2085E967001DFE7B /* File.swift */; };
-		FD6201A22085E967001DFE7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A02085E967001DFE7B /* User.swift */; };
 		FD6201AD2085E992001DFE7B /* MakeableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201AC2085E992001DFE7B /* MakeableProtocol.swift */; };
 		FD6201BA2085E9EA001DFE7B /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201962085E922001DFE7B /* UnitTests.swift */; };
 		FD6201BB2085E9F6001DFE7B /* Makeable.min.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A72085E978001DFE7B /* Makeable.min.generated.swift */; };
-		FD6201BC2085E9F6001DFE7B /* Makeable.static.min.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A42085E978001DFE7B /* Makeable.static.min.generated.swift */; };
 		FD6201BD2085E9FA001DFE7B /* Makeable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A62085E978001DFE7B /* Makeable.generated.swift */; };
-		FD6201BE2085E9FA001DFE7B /* Makeable.static.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A52085E978001DFE7B /* Makeable.static.generated.swift */; };
-		FD6201C12085EA62001DFE7B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD62019F2085E967001DFE7B /* File.swift */; };
-		FD6201C22085EA62001DFE7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201A02085E967001DFE7B /* User.swift */; };
 		FD6201C32085EA65001DFE7B /* MakeableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201AC2085E992001DFE7B /* MakeableProtocol.swift */; };
+		FD6201E42085FDF8001DFE7B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201E22085FDF8001DFE7B /* Example.swift */; };
+		FD6201E52085FDF8001DFE7B /* TestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201E32085FDF8001DFE7B /* TestCases.swift */; };
+		FD6201E62085FF9F001DFE7B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201E22085FDF8001DFE7B /* Example.swift */; };
+		FD6201E72085FF9F001DFE7B /* TestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6201E32085FDF8001DFE7B /* TestCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD6201932085E922001DFE7B /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6201962085E922001DFE7B /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		FD6201982085E922001DFE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD62019F2085E967001DFE7B /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../Example/Input/File.swift; sourceTree = "<group>"; };
-		FD6201A02085E967001DFE7B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../Example/Input/User.swift; sourceTree = "<group>"; };
-		FD6201A42085E978001DFE7B /* Makeable.static.min.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Makeable.static.min.generated.swift; path = ../Example/Makeable.static.min.generated.swift; sourceTree = "<group>"; };
-		FD6201A52085E978001DFE7B /* Makeable.static.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Makeable.static.generated.swift; path = ../Example/Makeable.static.generated.swift; sourceTree = "<group>"; };
 		FD6201A62085E978001DFE7B /* Makeable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Makeable.generated.swift; path = ../Example/Makeable.generated.swift; sourceTree = "<group>"; };
 		FD6201A72085E978001DFE7B /* Makeable.min.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Makeable.min.generated.swift; path = ../Example/Makeable.min.generated.swift; sourceTree = "<group>"; };
 		FD6201AC2085E992001DFE7B /* MakeableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeableProtocol.swift; path = ../MakeableProtocol.swift; sourceTree = "<group>"; };
 		FD6201B22085E9E0001DFE7B /* UnitTestsMin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestsMin.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6201E22085FDF8001DFE7B /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Example.swift; path = ../Example/Input/Example.swift; sourceTree = "<group>"; };
+		FD6201E32085FDF8001DFE7B /* TestCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestCases.swift; path = ../Example/Input/TestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +89,8 @@
 		FD62019E2085E94C001DFE7B /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				FD62019F2085E967001DFE7B /* File.swift */,
-				FD6201A02085E967001DFE7B /* User.swift */,
+				FD6201E22085FDF8001DFE7B /* Example.swift */,
+				FD6201E32085FDF8001DFE7B /* TestCases.swift */,
 			);
 			name = Input;
 			sourceTree = "<group>";
@@ -104,8 +100,6 @@
 			children = (
 				FD6201A62085E978001DFE7B /* Makeable.generated.swift */,
 				FD6201A72085E978001DFE7B /* Makeable.min.generated.swift */,
-				FD6201A52085E978001DFE7B /* Makeable.static.generated.swift */,
-				FD6201A42085E978001DFE7B /* Makeable.static.min.generated.swift */,
 			);
 			name = Output;
 			sourceTree = "<group>";
@@ -240,11 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6201972085E922001DFE7B /* UnitTests.swift in Sources */,
-				FD6201A12085E967001DFE7B /* File.swift in Sources */,
 				FD6201AD2085E992001DFE7B /* MakeableProtocol.swift in Sources */,
-				FD6201A22085E967001DFE7B /* User.swift in Sources */,
 				FD6201BD2085E9FA001DFE7B /* Makeable.generated.swift in Sources */,
-				FD6201BE2085E9FA001DFE7B /* Makeable.static.generated.swift in Sources */,
+				FD6201E42085FDF8001DFE7B /* Example.swift in Sources */,
+				FD6201E52085FDF8001DFE7B /* TestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6201BC2085E9F6001DFE7B /* Makeable.static.min.generated.swift in Sources */,
-				FD6201C12085EA62001DFE7B /* File.swift in Sources */,
+				FD6201E62085FF9F001DFE7B /* Example.swift in Sources */,
+				FD6201E72085FF9F001DFE7B /* TestCases.swift in Sources */,
 				FD6201BB2085E9F6001DFE7B /* Makeable.min.generated.swift in Sources */,
 				FD6201C32085EA65001DFE7B /* MakeableProtocol.swift in Sources */,
-				FD6201C22085EA62001DFE7B /* User.swift in Sources */,
 				FD6201BA2085E9EA001DFE7B /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
