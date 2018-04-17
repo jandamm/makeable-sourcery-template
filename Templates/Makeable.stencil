@@ -1,10 +1,14 @@
 // swiftlint:disable line_length
 
-{% for t in types.structs.implementing.Makeable %}func make{{ t.name }}{% for v in t.variables %}({% if not forloop.first %}_ {% endif %}{{ v.name }}: {{ v.typeName }}) -> {% endfor %}{{ t.name }} {
-    return{% for v in t.variables %}{% if not forloop.first %} { ({{ v.name }}: {{ v.typeName }}) in{% endif %}{% endfor %}
-        return {{ t.name }}({% for v in t.variables %}{{ v.name }}: {{ v.name }}{% if not forloop.last %}, {% endif %}{% endfor %})
-    {% for v in t.variables %}{% if not forloop.first %}}{% if not forloop.last %} {% endif %}{% endif %}{% endfor %}
-}{% if not forloop.last %}
+{% for t in types.structs.implementing.Makeable %}extension {{ t.name }} {
+    static func make{% for v in t.variables %}({% if not forloop.first %}_ {% endif %}{{ v.name }}: {{ v.typeName }}) -> {% endfor %}{{ t.name }} {
+        return{% for v in t.variables %}{% if not forloop.first %} { ({{ v.name }}: {{ v.typeName }}) in{% endif %}{% endfor %}
+            return {{ t.name }}({% for v in t.variables %}{{ v.name }}: {{ v.name }}{% if not forloop.last %}, {% endif %}{% endfor %})
+        {% for v in t.variables %}{% if not forloop.first %}}
+        {% endif %}{% endfor %}
+    }
+}
+{% if not forloop.last %}
 
 {% endif %}{% endfor %}
 
