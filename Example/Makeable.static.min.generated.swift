@@ -10,7 +10,7 @@ extension File {
 }
 
 extension User {
-    static func make(name: String) -> (_ id: Int) -> (_ email: String) -> User {
+    static func make(name: String) -> (_ id: Int) -> (_ email: String?) -> User {
         return { id in { email in User(name: name, id: id, email: email) } }
     }
 }
