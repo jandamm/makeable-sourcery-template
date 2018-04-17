@@ -17,6 +17,11 @@
 			"path": "Example",
 			"name": "Example Output",
 			"folder_exclude_patterns": ["*"]
+		},
+		{
+			"path": "Tests/UnitTests",
+			"name": "Tests",
+			"file_exclude_patterns": ["*.plist"]
 		}
 	]
 }
