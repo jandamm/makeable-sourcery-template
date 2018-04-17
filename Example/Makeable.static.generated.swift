@@ -1,6 +1,8 @@
 // Generated using Sourcery 0.11.1 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
+// swiftlint:disable line_length
+
 extension File {
     static func make(name: String) -> (_ fileEnding: String) -> (_ locked: Bool) -> File {
         return { (fileEnding: String) in { (locked: Bool) in
@@ -18,3 +20,5 @@ extension User {
         }
     }
 }
+
+// swiftlint:enable line_length
