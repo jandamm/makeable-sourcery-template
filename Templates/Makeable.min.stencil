@@ -1,8 +1,10 @@
 // swiftlint:disable line_length
+{% macro parameterDef variable %}{{ variable.name }}: {{ variable.typeName }}{% endmacro %}
+{% macro parameterName variable %}{{ variable.name }}: {{ variable.name }}{% endmacro %}
 
 {% for t in types.structs.implementing.Makeable %}extension {{ t.name }} {
-    static func make{% for v in t.variables|stored where not v.defaultValue or v.isMutable %}({% if not forloop.first %}_ {% endif %}{{ v.name }}: {{ v.typeName }}) -> {% endfor %}{{ t.name }} {
-        return {% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{% if not forloop.first %}{ {{ v.name }} in {% endif %}{% endfor %}{{ t.name }}({% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{{ v.name }}: {{ v.name }}{% if not forloop.last %}, {% endif %}{% endfor %}){% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{% if not forloop.first %} }{% endif %}{% endfor %}
+    static func make{% for v in t.variables|stored where not v.defaultValue or v.isMutable %}({% if not forloop.first %}_ {% endif %}{% call parameterDef v %}) -> {% endfor %}{{ t.name }} {
+        return {% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{% if not forloop.first %}{ {{ v.name }} in {% endif %}{% endfor %}{{ t.name }}({% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{% call parameterName v %}{% if not forloop.last %}, {% endif %}{% endfor %}){% for v in t.variables|stored where not v.defaultValue or v.isMutable %}{% if not forloop.first %} }{% endif %}{% endfor %}
     }
 }{% if not forloop.last %}
 
