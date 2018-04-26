@@ -8,7 +8,9 @@ Please visit [Sourcery](https://github.com/krzysztofzablocki/Sourcery) to see ho
 
 Once you have sourcery running you can choose between `Makeable.stencil` and `Makeable.min.stencil` depending on your preference.
 
-Then you have to copy the `MakeableProtocol.swift` and the template to your project. Then start by implementing `Makeable` to your `struct`s which should have the function generated. (If you want to skip this step check the tips.)
+Then you have to copy the `MakeableProtocol.swift` and the template to your project. Then start by implementing `Makeable` to your `struct`s which should have the function generated. (If you want to skip this step check the [tips](#tips).)
+
+If you have ideas for improvements check my [ToDos](#todo) and [contact me](#author).
 
 | Makeable.min.stencil | Makeable.stencil |
 | :--- | :--- |
@@ -67,6 +69,7 @@ extension User {
 ## Tips
 - You can remove `.implementing.Makeable` from the template to generate a make function for every struct.
 - You can change `types.structs.implementing.Makeable` to `types.implementing.Makeable` to remove the restriction of structs.
+- The structs variables order defines the `make` functions order.
 - The default templates work fine with [SwiftFormat](https://github.com/nicklockwood/SwiftFormat).
 
 ## ToDo
@@ -75,7 +78,7 @@ extension User {
 
 ## Author
 
-Jan Dammshäuser, [mail@jandamm.de](mailto:mail@jandamm.de)
+Jan Dammshäuser, [mail@jandamm.de](mailto:mail@jandamm.de), [@jandammm](https://twitter.com/jandammm)
 
 ## License
 
