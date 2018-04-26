@@ -1,6 +1,6 @@
 # Makeable Template for Sourcery
 
-A template for [Sourcery](https://github.com/krzysztofzablocki/Sourcery) that will generate a functional initializer.
+A template for [Sourcery](https://github.com/krzysztofzablocki/Sourcery) that will generate a curried initializer.
 
 ## Example
 
@@ -9,6 +9,10 @@ Please visit [Sourcery](https://github.com/krzysztofzablocki/Sourcery) to see ho
 Once you have sourcery running you can choose between `Makeable.stencil` and `Makeable.min.stencil` depending on your preference.
 
 Then you have to copy the `MakeableProtocol.swift` and the template to your project. Then start by implementing `Makeable` to your `struct`s which should have the function generated. (If you want to skip this step check the tips.)
+
+| Minified | Long |
+| :--- | :--- |
+| ![Xcode Minified Tooltip](static/Xcode.min.png) | ![Xcode Long Tooltip](static/Xcode.png)|
 
 ### Input:
 ``` Swift
@@ -29,13 +33,13 @@ struct File: Makeable, Equatable {
 ### Output Minified:
 ``` Swift
 extension File {
-    static func make(name: String) -> (_ fileEnding: String) -> (_ locked: Bool) -> (_ owner: User) -> File {
+    static func make(_ name: String) -> (_ fileEnding: String) -> (_ locked: Bool) -> (_ owner: User) -> File {
         return { fileEnding in { locked in { owner in File(name: name, fileEnding: fileEnding, locked: locked, owner: owner) } } }
     }
 }
 
 extension User {
-    static func make(name: String) -> (_ id: Int) -> (_ email: String?) -> User {
+    static func make(_ name: String) -> (_ id: Int) -> (_ email: String?) -> User {
         return { id in { email in User(name: name, id: id, email: email) } }
     }
 }
