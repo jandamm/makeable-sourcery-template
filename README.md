@@ -10,9 +10,9 @@ Once you have sourcery running you can choose between `Makeable.stencil` and `Ma
 
 Then you have to copy the `MakeableProtocol.swift` and the template to your project. Then start by implementing `Makeable` to your `struct`s which should have the function generated. (If you want to skip this step check the tips.)
 
-| Minified | Long |
+| Makeable.min.stencil | Makeable.stencil |
 | :--- | :--- |
-| ![Xcode Minified Tooltip](static/Xcode.min.png) | ![Xcode Long Tooltip](static/Xcode.png)|
+| ![Xcode Minified Tooltip](static/Xcode.min.png) | ![Xcode Long Tooltip](static/Xcode.png) |
 
 ### Input:
 ``` Swift
